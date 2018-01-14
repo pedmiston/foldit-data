@@ -1,4 +1,7 @@
-connect_to_db <- function() {
+#' Connect to the Foldit database.
+#'
+#' @export
+connect_db <- function() {
   DBI::dbConnect(RMySQL::MySQL(),
                  host = "192.241.128.175",
                  port = 3306,
